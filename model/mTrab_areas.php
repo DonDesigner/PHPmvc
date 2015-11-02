@@ -1,11 +1,11 @@
 <?php
-
+require_once 'db/dbConnection.php';
 /**
  * Description of mTrab_areas
  *
  * @author Diego
  */
-class mTrab_areas {
+class mTrab_Areas extends dbConnection {
 
     private $cod_trabalho;
     private $cod_area;

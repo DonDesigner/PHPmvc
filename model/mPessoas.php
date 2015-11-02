@@ -1,11 +1,11 @@
 <?php
-
+require_once 'db/dbConnection.php';
 /**
  * Description of mPessoas
  *
  * @author Diego
  */
-class mPessoas {
+class mPessoas extends dbConnection {
    private $cod_pessoa;
    private $nome_pessoa;
    

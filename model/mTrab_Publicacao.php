@@ -1,11 +1,11 @@
 <?php
-
+require_once 'db/dbConnection.php';
 /**
  * Description of mTrab_Publicacao
  *
  * @author Diego
  */
-class mTrab_Publicacao {
+class mTrab_Publicacao extends dbConnection{
     private $cod_trabalho;
     private $cod_publicaco;
     

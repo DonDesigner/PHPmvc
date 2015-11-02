@@ -1,11 +1,11 @@
 <?php
-
+require_once 'db/dbConnection.php';
 /**
  * Description of mFuncoes
  *
  * @author Diego
  */
-class mFuncoes {
+class mFuncoes extends dbConnection{
     private $cod_pessoa;
     private $cod_trabalho;
     private $email_pessoa;
@@ -36,7 +36,7 @@ class mFuncoes {
         $this->cod_pessoa = $cod_pessoa;
     }
 
-    function setCodPrabalho($cod_trabalho) {
+    function setCodTrabalho($cod_trabalho) {
         $this->cod_trabalho = $cod_trabalho;
     }
 
