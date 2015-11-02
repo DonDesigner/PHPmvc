@@ -14,7 +14,7 @@ require_once 'model/mTrabalhos';
 class aTrabalhos extends mTrabalhos {
    protected $sqlInsert = "INSERT INTO trabalhos (titulo, resumo, palavras_chaves, arquivo, data_cad, referencias, hipotese, metodologia, objetivo, resultado) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')";
     protected $sqlUpdate = "UPDATE v SET titulo='%s', resumo='%s', palavras_chaves='%s', arquivo='%s', data_cad='%s', referencias='%s', hipotese='%s', metodologia='%s', objetivo='%s', resultado='%s' WHERE cod_trabalho='%s'";
-    protected $sqlSelect = "SELECT * FROM trabalhos WHERE 1=1 %s %s";
+    protected $sqlSelect = "SELECT *, date_format(data_cad, '%s') as data_cad FROM trabalhos WHERE 1=1 %s %s";
     protected $sqlDelete = "DELETE FROM trabalhos WHERE cod_trabalho='%s' ";
 
     //*********************************************************************************
@@ -24,7 +24,7 @@ class aTrabalhos extends mTrabalhos {
                 $this->getResumo(),
                 $this->getPalavrasChaves(),
                 $this->getArquivo(),
-                $this->getDataCad(),
+                $this->getDataCad(true),
                 $this->getReferencias(),
                 $this->getHipotese(),
                 $this->getMetodologia(),
@@ -42,7 +42,7 @@ class aTrabalhos extends mTrabalhos {
                 $this->getResumo(),
                 $this->getPalavrasChaves(),
                 $this->getArquivo(),
-                $this->getDataCad(),
+                $this->getDataCad(true),
                 $this->getReferencias(),
                 $this->getHipotese(),
                 $this->getMetodologia(),
@@ -61,7 +61,7 @@ class aTrabalhos extends mTrabalhos {
 
     //*********************************************************************************
     public function select($where = '', $order = '') {
-        $sql = sprintf($this->sqlSelect, $where, $order);
+        $sql = sprintf($this->sqlSelect, '%d/%m/%Y %H:%i:%s', $where, $order);
         return $this->RunSelect($sql);
     }
 
