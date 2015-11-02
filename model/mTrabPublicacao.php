@@ -5,7 +5,7 @@ require_once 'db/dbConnection.php';
  *
  * @author Diego
  */
-class mTrab_Publicacao extends dbConnection{
+class mTrabPublicacao extends dbConnection{
     private $cod_trabalho;
     private $cod_publicaco;
     

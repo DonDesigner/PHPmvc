@@ -1,5 +1,5 @@
 <?php
-require_once 'model/mTrab_Areas';
+require_once 'model/mTrabAreas';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +11,7 @@ require_once 'model/mTrab_Areas';
  *
  * @author Diego
  */
-class aTrab_Areas extends mTrab_Areas{
+class aTrabAreas extends mTrabAreas{
     protected $sqlInsert = "INSERT INTO trab_areas (cod_trabalho, cod_area) VALUES ('%s', '%s')";
    // protected $sqlUpdate = "UPDATE trab_areas SET cod_area = '%s' WHERE cod_trabalho='%s'";
     

@@ -1,12 +1,12 @@
 <?php
-require_once 'model/mTrab_Publicacao';
+require_once 'model/mTrabPublicacao';
 
 /**
  * Description of aTrab_Publicacao
  *
  * @author Diego
  */
-class aTrab_Publicacao extends mTrab_Publicacao {
+class aTrabPublicacao extends mTrabPublicacao {
     protected $sqlInsert = "INSERT INTO trab_publicacao VALUES ('%s')";
     protected $sqlUpdate = "UPDATE trab_publicacao SET cod_publicacao='%s' WHERE cod_trabalho='%s'";
     protected $sqlDelete = "DELETE FROM trab_publicacao WHERE cod_trabalho='%s'";
