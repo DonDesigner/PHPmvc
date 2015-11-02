@@ -1,5 +1,5 @@
 <?php
-require_once 'actions/aPessoas';
+require_once 'actions/aPessoas.php';
 /**
  * Description of Pessoas
  *

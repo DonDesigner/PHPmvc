@@ -1,5 +1,5 @@
 <?php
-require_once 'model/mFuncoes';
+require_once 'model/mFuncoes.php';
 
 /**
  * Description of aFuncoes

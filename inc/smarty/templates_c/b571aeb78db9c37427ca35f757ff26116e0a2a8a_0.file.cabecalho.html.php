@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-11-02 22:48:02
+<?php /* Smarty version 3.1.27, created on 2015-11-03 00:46:19
          compiled from "C:\xampp\htdocs\phpmvc\view\cabecalho.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:1435637da12c071c0_23854107%%*/
+/*%%SmartyHeaderCode:135565637f5cbefd192_97300159%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b571aeb78db9c37427ca35f757ff26116e0a2a8a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\phpmvc\\view\\cabecalho.html',
-      1 => 1446497242,
+      1 => 1446507977,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1435637da12c071c0_23854107',
+  'nocache_hash' => '135565637f5cbefd192_97300159',
   'variables' => 
   array (
     'nome' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5637da12c12d50_71587883',
+  'unifunc' => 'content_5637f5cbf37b24_42196154',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5637da12c12d50_71587883')) {
-function content_5637da12c12d50_71587883 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5637f5cbf37b24_42196154')) {
+function content_5637f5cbf37b24_42196154 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1435637da12c071c0_23854107';
+$_smarty_tpl->properties['nocache_hash'] = '135565637f5cbefd192_97300159';
 ?>
 <!DOCTYPE html>
 
@@ -47,9 +47,9 @@ $_smarty_tpl->properties['nocache_hash'] = '1435637da12c071c0_23854107';
         <a href="eventos.php">Eventos</a> | 
         <a href="funcoes.php">Funções</a> |
         <a href="pessoas.php">Pessoas</a> | 
-        <a href="trabalhos.php">trabalhos</a> | 
-        <a href="trabalhos_eventos.php">Trabalhos Eventos</a> | 
-        <a href="trabalhos_areas.php">Trabalho Areas</a>
+        <a href="trabalhos.php">Trabalhos</a> | 
+        <a href="trabPublicacoes.php">Trabalhos Publicações</a> | 
+        <a href="trabArea.php">Trabalho Areas</a>
         <hr/>
         </div>
         

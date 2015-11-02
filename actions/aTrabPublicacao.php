@@ -1,5 +1,5 @@
 <?php
-require_once 'model/mTrabPublicacao';
+require_once 'model/mTrabPublicacao.php';
 
 /**
  * Description of aTrab_Publicacao

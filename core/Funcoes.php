@@ -1,5 +1,5 @@
 <?php
-require_once 'actions/aFuncoess';
+require_once 'actions/aFuncoes.php';
 /**
  * Description of Funcoes
  *
