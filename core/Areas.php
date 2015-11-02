@@ -1,6 +1,6 @@
 <?php
 
-require_once 'actions/aAreas';
+require_once 'actions/aAreas.php';
 /**
  * Description of Areas
  *
