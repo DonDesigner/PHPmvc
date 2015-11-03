@@ -9,7 +9,7 @@
     {foreach from=$lista item=row}
     <tr>
         <td>{$row.nome_area}</td>
-        <td>Edit | Delete</td>
+        <td>Edit | <a href='?del={$row.cod_area}'>Delete</a></td>
     </tr>
     {/foreach}
 </table>

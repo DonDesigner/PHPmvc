@@ -8,12 +8,13 @@
         <th>Ações</th>
     </tr>
     
-   
+   {foreach from=$lista item=row}
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{$row.titulo}</td>
+        <td>{$row.nome_area}</td>
+        <td>Edit | <a href='?del={$row.cod_trabalho}&del2={$row.cod_area}'>Delete</a></td>
     </tr>
+    {/foreach}
    
 </table>
 

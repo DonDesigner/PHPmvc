@@ -36,7 +36,7 @@ class aTrabAreas extends mTrabAreas{
     
     //*********************************************************************************
     public function delete(){
-        $sql = sprintf($this->sqlDelete, $this->getCodTrabalho());
+        $sql = sprintf($this->sqlDelete, $this->getCodTrabalho(), $this->getCodArea());
         return $this->RunQuery($sql);
     }
     
