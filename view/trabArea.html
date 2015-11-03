@@ -1,6 +1,23 @@
 {include file='view/cabecalho.html'}
-
-
+<form method="post">
+    <label>Trabalho:</label>
+        <select name="trabalho">
+            {foreach from=$lst item=t}
+                <option value='{$t.cod_trabalho}'>{$t.titulo}</option>
+            {/foreach}
+        </select>
+    <br/>
+    
+    <label>Área:</label>
+        <select name="area">
+            {foreach from=$lsa item=a}
+                <option value='{$a.cod_area}'>{$a.nome_area}</option>
+            {/foreach}
+        </select>
+    <br/>   
+    <input type='submit' value='salvar'>
+</form>
+<hr/>
 <table border='1'>
     <tr>
         <th>Trabalho</th>
